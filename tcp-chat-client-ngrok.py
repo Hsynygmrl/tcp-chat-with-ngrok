@@ -1,6 +1,6 @@
 import socket, time
 client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-client_socket.connect(('4.tcp.ngrok.io',11950))
+client_socket.connect(('ngrok ip address of server side',ngrok port))
 while True:
     data = str.encode(input('Abdullah:'))
     client_socket.send(data)
